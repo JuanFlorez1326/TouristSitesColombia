@@ -1,4 +1,6 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.data;
+
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
 
 import java.util.ArrayList;
 import java.util.List;

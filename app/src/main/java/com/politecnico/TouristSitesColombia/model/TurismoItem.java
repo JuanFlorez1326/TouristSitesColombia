@@ -1,4 +1,4 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.model;
 
 import java.io.Serializable;
 import java.util.Objects;

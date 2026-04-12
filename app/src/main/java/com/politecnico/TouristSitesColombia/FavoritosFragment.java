@@ -9,7 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import com.politecnico.TouristSitesColombia.adapter.GaleriaAdapter;
 import com.politecnico.TouristSitesColombia.databinding.FragmentFavoritosBinding;
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
+import com.politecnico.TouristSitesColombia.utils.DialogHelper;
+import com.politecnico.TouristSitesColombia.utils.FavoritesManager;
 
 import java.util.List;
 

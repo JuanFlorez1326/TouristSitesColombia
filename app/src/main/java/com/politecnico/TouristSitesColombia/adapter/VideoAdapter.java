@@ -1,4 +1,4 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.adapter;
 
 import android.net.Uri;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.politecnico.TouristSitesColombia.R;
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
 
 import java.util.List;
 

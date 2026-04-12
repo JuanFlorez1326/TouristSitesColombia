@@ -1,4 +1,4 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.utils;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;

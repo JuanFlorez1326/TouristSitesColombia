@@ -1,4 +1,4 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.politecnico.TouristSitesColombia.R;
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
 
 import java.util.ArrayList;
 import java.util.List;

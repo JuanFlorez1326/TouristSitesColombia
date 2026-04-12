@@ -1,4 +1,4 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.utils;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -19,6 +19,8 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.politecnico.TouristSitesColombia.R;
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
 
 public class DialogHelper {
 

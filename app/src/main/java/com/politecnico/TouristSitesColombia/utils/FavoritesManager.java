@@ -1,10 +1,11 @@
-package com.politecnico.TouristSitesColombia;
+package com.politecnico.TouristSitesColombia.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

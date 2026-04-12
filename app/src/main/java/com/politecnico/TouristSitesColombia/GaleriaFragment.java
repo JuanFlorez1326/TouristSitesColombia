@@ -11,7 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import com.politecnico.TouristSitesColombia.adapter.GaleriaAdapter;
+import com.politecnico.TouristSitesColombia.data.DummyData;
 import com.politecnico.TouristSitesColombia.databinding.FragmentGaleriaBinding;
+import com.politecnico.TouristSitesColombia.utils.DialogHelper;
 
 
 public class GaleriaFragment extends Fragment {

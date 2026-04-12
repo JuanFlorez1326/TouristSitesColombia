@@ -12,7 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.politecnico.TouristSitesColombia.adapter.VideoAdapter;
 import com.politecnico.TouristSitesColombia.databinding.FragmentVideosBinding;
+import com.politecnico.TouristSitesColombia.model.TurismoItem;
 
 import java.util.ArrayList;
 import java.util.List;
