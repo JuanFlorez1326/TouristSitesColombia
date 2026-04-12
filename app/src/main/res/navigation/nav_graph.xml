@@ -9,7 +9,7 @@
     <fragment android:id="@+id/nav_regiones" android:name="com.politecnico.TouristSitesColombia.RegionesFragment" android:label="Regiones" />
     <fragment android:id="@+id/nav_destinos" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Destinos" />
     <fragment android:id="@+id/nav_galeria" android:name="com.politecnico.TouristSitesColombia.GaleriaFragment" android:label="Galería" />
-    <fragment android:id="@+id/nav_recomendaciones" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Recomendaciones" />
+    <fragment android:id="@+id/nav_recomendaciones" android:name="com.politecnico.TouristSitesColombia.RecomendacionesFragment" android:label="Recomendaciones" />
     <fragment android:id="@+id/nav_utilidades" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Utilidades" />
     <fragment android:id="@+id/nav_videos" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Videos" />
     <fragment android:id="@+id/nav_favoritos" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Favoritos" />
