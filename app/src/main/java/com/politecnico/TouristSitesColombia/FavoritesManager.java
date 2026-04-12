@@ -27,7 +27,8 @@ public class FavoritesManager {
         if (json == null) {
             return new ArrayList<>();
         }
-        Type type = new TypeToken<ArrayList<TurismoItem>>() {}.getType();
+        Type type = new TypeToken<ArrayList<TurismoItem>>() {
+        }.getType();
         return gson.fromJson(json, type);
     }
 

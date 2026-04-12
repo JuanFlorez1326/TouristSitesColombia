@@ -2,18 +2,15 @@ package com.politecnico.TouristSitesColombia;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.politecnico.TouristSitesColombia.databinding.FragmentVideosBinding;
 
@@ -27,13 +24,11 @@ public class VideosFragment extends Fragment {
     private VideoAdapter adapter;
     private List<TurismoItem> misVideosLocales;
 
-    private final ActivityResultLauncher<String> selectorDeVideo = registerForActivityResult(
-            new ActivityResultContracts.GetContent(),
-            uri -> {
-                if (uri != null) {
-                    agregarVideoALaLista(uri);
-                }
-            });
+    private final ActivityResultLauncher<String> selectorDeVideo = registerForActivityResult(new ActivityResultContracts.GetContent(), uri -> {
+        if (uri != null) {
+            agregarVideoALaLista(uri);
+        }
+    });
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentVideosBinding.inflate(inflater, container, false);
@@ -54,14 +49,7 @@ public class VideosFragment extends Fragment {
 
     private void agregarVideoALaLista(Uri uri) {
         String idGenerado = "local_" + System.currentTimeMillis();
-        TurismoItem nuevoVideo = new TurismoItem(
-                idGenerado,
-                "Video de Galería",
-                "Video local cargado desde tu dispositivo",
-                "",
-                uri.toString(),
-                "VIDEO_LOCAL"
-        );
+        TurismoItem nuevoVideo = new TurismoItem(idGenerado, "Video de Galería", "Video local cargado desde tu dispositivo", "", uri.toString(), "VIDEO_LOCAL");
 
         misVideosLocales.add(nuevoVideo);
 

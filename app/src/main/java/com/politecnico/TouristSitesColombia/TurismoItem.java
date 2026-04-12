@@ -21,12 +21,29 @@ public class TurismoItem implements Serializable {
         this.tipo = tipo;
     }
 
-    public String getId() { return id; }
-    public String getTitulo() { return titulo; }
-    public String getDescripcion() { return descripcion; }
-    public String getUrlImagen() { return urlImagen; }
-    public String getUrlVideoYoutube() { return urlVideoYoutube; }
-    public String getTipo() { return tipo; }
+    public String getId() {
+        return id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public String getUrlImagen() {
+        return urlImagen;
+    }
+
+    public String getUrlVideoYoutube() {
+        return urlVideoYoutube;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
 
     @Override
     public boolean equals(Object o) {
