@@ -13,70 +13,80 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
             android:text="Mi Perfil"
-            android:textColor="#333333"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_rounded_white"
-            android:elevation="2dp"
-            android:gravity="center"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:gravity="center"
+            android:padding="24dp"
+            android:elevation="2dp">
 
             <ImageView
                 android:id="@+id/imgProfile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher_round" />
+                android:src="@mipmap/ic_launcher_round"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
                 android:text="Viajero Pro"
-                android:textColor="#333333"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="Apasionado por conocer cada rincón mágico de Colombia."
                 android:textAlignment="center"
-                android:textColor="#666666" />
+                android:textColor="#666666"
+                android:layout_marginTop="8dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:text="✈️ 12 Ciudades Visitadas"
+                android:textStyle="bold"
+                android:textColor="#F23D5E"
                 android:background="#EAF3F8"
                 android:padding="8dp"
-                android:text="✈️ 12 Ciudades Visitadas"
-                android:textColor="#F23D5E"
-                android:textStyle="bold" />
+                android:layout_marginTop="16dp"/>
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="12dp"
             android:text="Mis Lugares Favoritos (Top 3)"
-            android:textColor="#333333"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvEmptyTopFavs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aún no tienes lugares favoritos."
+            android:textAlignment="center"
+            android:textColor="#999999"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTopFavorites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:nestedScrollingEnabled="false" />
+            android:nestedScrollingEnabled="false"/>
 
     </LinearLayout>
 </ScrollView>

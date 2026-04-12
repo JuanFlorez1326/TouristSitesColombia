@@ -5,38 +5,31 @@ import com.politecnico.TouristSitesColombia.model.TurismoItem;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class DummyData {
-
-    public static List<TurismoItem> getRegiones() {
-        List<TurismoItem> list = new ArrayList<>();
-        list.add(new TurismoItem("r1", "Costa Caribe", "Descubre playas paradisiacas y ciudades coloniales.", "https://images.unsplash.com/photo-1557456170-0cf4f4d0d362?auto=format&fit=crop&w=600", null, "REGION"));
-        list.add(new TurismoItem("r2", "Región Andina", "Montañas majestuosas y clima templado.", "https://images.unsplash.com/photo-1590459528659-195971ce971c?auto=format&fit=crop&w=600", null, "REGION"));
-        list.add(new TurismoItem("r3", "Región Pacífica", "Biodiversidad única y avistamiento de ballenas.", "https://images.unsplash.com/photo-1629813354316-291db72b64a2?auto=format&fit=crop&w=600", null, "REGION"));
-        return list;
-    }
-
-    public static List<TurismoItem> getDestinos() {
-        List<TurismoItem> list = new ArrayList<>();
-        list.add(new TurismoItem("d1", "Cartagena", "La Ciudad Heroica amurallada.", "https://images.unsplash.com/photo-1583345226999-523c14af084e?auto=format&fit=crop&w=600", null, "DESTINO"));
-        list.add(new TurismoItem("d2", "San Andrés", "El mar de los siete colores.", "https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&w=600", null, "DESTINO"));
-        list.add(new TurismoItem("d3", "Tolú y Coveñas", "Playas tranquilas ideales para descansar.", "https://images.unsplash.com/photo-1596395819057-e37f55a8516b?auto=format&fit=crop&w=600", null, "DESTINO"));
-        return list;
-    }
-
-    public static List<TurismoItem> getVideos() {
-        List<TurismoItem> list = new ArrayList<>();
-        list.add(new TurismoItem("v1", "Guía Turística: Cartagena", "Recorrido por la ciudad", "https://img.youtube.com/vi/eQ2GgQ3_a-0/hqdefault.jpg", "eQ2GgQ3_a-0", "VIDEO"));
-        list.add(new TurismoItem("v2", "Maravillas de San Andrés", "Vista aérea del mar", "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg", "dQw4w9WgXcQ", "VIDEO"));
-        return list;
-    }
 
     public static List<TurismoItem> getGaleria() {
         List<TurismoItem> list = new ArrayList<>();
-        list.add(new TurismoItem("g1", "Atardecer Tolú", "Hermoso atardecer", "https://images.unsplash.com/photo-1596395819057-e37f55a8516b?auto=format&fit=crop&w=600", null, "GALERIA"));
-        list.add(new TurismoItem("g2", "Playa Blanca", "Mar cristalino", "https://images.unsplash.com/photo-1583345226999-523c14af084e?auto=format&fit=crop&w=400&h=600", null, "GALERIA"));
-        list.add(new TurismoItem("g3", "Cabañas", "Descanso", "https://images.unsplash.com/photo-1557456170-0cf4f4d0d362?auto=format&fit=crop&w=400&h=300", null, "GALERIA"));
-        list.add(new TurismoItem("g4", "Islas de San Bernardo", "Paraíso", "https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&w=400&h=500", null, "GALERIA"));
-        list.add(new TurismoItem("g5", "Palmeras", "Brisa marina", "https://images.unsplash.com/photo-1590459528659-195971ce971c?auto=format&fit=crop&w=400", null, "GALERIA"));
+
+        list.add(new TurismoItem("g1", "Atardecer Tolú", "Hermoso atardecer en el Golfo de Morrosquillo", "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g2", "Playa Blanca Barú", "Mar cristalino del Caribe colombiano", "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g3", "Islas de San Bernardo", "Archipiélago paradisíaco", "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g4", "San Andrés Isla", "El mar de los 7 colores", "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g5", "Palmeras Caribeñas", "Brisa marina bajo el sol", "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+
+        list.add(new TurismoItem("g6", "Parque Tayrona", "Selva tropical junto al mar", "https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g7", "Cascada en Colombia", "Ríos y cascadas de la región andina", "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g8", "Valle del Cocora", "Palmas de cera, árbol nacional", "https://images.unsplash.com/photo-1518182170546-07661fd94144?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g9", "Manglares del Caribe", "Ecosistema único del litoral", "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+
+        list.add(new TurismoItem("g10", "Cartagena Histórica", "Ciudad amurallada Patrimonio de la Humanidad", "https://images.unsplash.com/photo-1583005543166-a02aa8f44fbe?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g11", "Medellín de Noche", "La ciudad de la eterna primavera", "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g12", "Bogotá Panorámica", "Capital cultural y gastronómica", "https://images.unsplash.com/photo-1564509150-0b1a5e1a9e1e?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g13", "Cabañas de Descanso", "Alojamiento rústico en la naturaleza", "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+
+        list.add(new TurismoItem("g14", "Buceo en el Caribe", "Arrecifes de coral colombianos", "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+        list.add(new TurismoItem("g15", "Senderismo Andino", "Trekking por los Andes colombianos", "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=70&auto=format&fit=crop", null, "GALERIA"));
+
         return list;
     }
 }
