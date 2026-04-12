@@ -6,7 +6,7 @@
     app:startDestination="@id/nav_perfil">
 
     <fragment android:id="@+id/nav_perfil" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Mi Perfil" tools:layout="@layout/fragment_perfil" />
-    <fragment android:id="@+id/nav_regiones" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Regiones" />
+    <fragment android:id="@+id/nav_regiones" android:name="com.politecnico.TouristSitesColombia.RegionesFragment" android:label="Regiones" />
     <fragment android:id="@+id/nav_destinos" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Destinos" />
     <fragment android:id="@+id/nav_galeria" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Galería" />
     <fragment android:id="@+id/nav_recomendaciones" android:name="com.politecnico.TouristSitesColombia.PerfilFragment" android:label="Recomendaciones" />
