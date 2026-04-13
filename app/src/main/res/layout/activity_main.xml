@@ -1,29 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:openDrawer="start">
+    android:background="#E9F2F7"
+    android:orientation="horizontal">
 
-    <include
-        android:id="@+id/app_bar_main"
-        layout="@layout/app_bar_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/sidebarContainer"
+        android:layout_width="70dp"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#EAF3F8"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main"
-        app:itemIconTint="#333333"
-        app:itemTextColor="#333333"
-        app:menu="@menu/drawer_menu" />
+        android:orientation="vertical"
+        android:paddingTop="16dp">
 
-</androidx.drawerlayout.widget.DrawerLayout>
+        <ImageView
+            android:id="@+id/btnMenuToggle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="#000" />
+
+        <LinearLayout
+            android:id="@+id/itemPerfil"
+            style="@style/SidebarItem">
+
+            <ImageView
+                android:id="@+id/iconPerfil"
+                style="@style/SidebarIcon"
+                android:src="@android:drawable/ic_menu_myplaces"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textPerfil"
+                style="@style/SidebarText"
+                android:text="Perfil" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemGaleria"
+            style="@style/SidebarItem">
+
+            <ImageView
+                android:id="@+id/iconGaleria"
+                style="@style/SidebarIcon"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textGaleria"
+                style="@style/SidebarText"
+                android:text="Galería" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemRecomendaciones"
+            style="@style/SidebarItem">
+
+            <ImageView
+                android:id="@+id/iconRecomendaciones"
+                style="@style/SidebarIcon"
+                android:src="@android:drawable/ic_menu_help"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textRecomendaciones"
+                style="@style/SidebarText"
+                android:text="Recomendaciones" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemVideos"
+            style="@style/SidebarItem">
+
+            <ImageView
+                android:id="@+id/iconVideos"
+                style="@style/SidebarIcon"
+                android:src="@android:drawable/ic_media_play"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textVideos"
+                style="@style/SidebarText"
+                android:text="Videos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemFavoritos"
+            style="@style/SidebarItem">
+
+            <ImageView
+                android:id="@+id/iconFavoritos"
+                style="@style/SidebarIcon"
+                android:src="@android:drawable/ic_menu_agenda"
+                app:tint="#000" />
+
+            <TextView
+                android:id="@+id/textFavoritos"
+                style="@style/SidebarText"
+                android:text="Favoritos" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment_content_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+    </LinearLayout>
+
+</LinearLayout>
